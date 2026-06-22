@@ -59,8 +59,8 @@ export function Footer() {
           </h2>
           <p className="mt-4 max-w-xl text-fg-muted">
             I'm always down to chat dev, gaming, homelabs, or cheer. Slide into
-            an inbox or add me on Steam — I promise I'm friendlier than my CS2
-            rank suggests.
+            an inbox or add me on Steam — I promise I'm friendlier than my
+            Rainbow Six rank suggests.
           </p>
 
           <TooltipProvider delayDuration={150}>

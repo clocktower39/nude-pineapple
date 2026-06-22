@@ -70,27 +70,38 @@ export function GamingSection() {
             {/* banner */}
             <div className="relative h-28 bg-gradient-to-br from-grape/40 via-ink-700 to-cyan/30">
               <div className="absolute inset-0 grid-bg opacity-40" />
-              <div className="absolute right-3 top-3">
-                <SteamStatusBadge
-                  status={steamProfile.status}
-                  game={steamProfile.currentGame}
-                />
-              </div>
             </div>
 
             <div className="px-5 pb-5">
-              {/* avatar */}
-              <div className="-mt-10 mb-3 flex items-end gap-3">
-                <div className="grid h-20 w-20 place-items-center rounded-xl border-2 border-cyan/60 bg-ink-900 text-4xl shadow-glow">
-                  🍍
+              {/* avatar + identity (status sits on the right, clear of the avatar) */}
+              <div className="-mt-10 mb-3 flex items-end justify-between gap-3">
+                <div className="flex items-end gap-3">
+                  {steamProfile.avatar ? (
+                    <img
+                      src={steamProfile.avatar}
+                      alt={`${steamProfile.username} Steam avatar`}
+                      className="h-20 w-20 rounded-xl border-2 border-cyan/60 bg-ink-900 object-cover shadow-glow"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="grid h-20 w-20 place-items-center rounded-xl border-2 border-cyan/60 bg-ink-900 text-4xl shadow-glow">
+                      🍍
+                    </div>
+                  )}
+                  <div className="pb-1">
+                    <p className="font-display text-lg font-semibold leading-tight">
+                      {steamProfile.username}
+                    </p>
+                    <p className="font-mono text-xs text-fg-faint">
+                      friend code: {steamProfile.friendCode}
+                    </p>
+                  </div>
                 </div>
                 <div className="pb-1">
-                  <p className="font-display text-lg font-semibold leading-tight">
-                    {steamProfile.username}
-                  </p>
-                  <p className="font-mono text-xs text-fg-faint">
-                    friend code: {steamProfile.friendCode}
-                  </p>
+                  <SteamStatusBadge
+                    status={steamProfile.status}
+                    game={steamProfile.currentGame}
+                  />
                 </div>
               </div>
 
@@ -103,7 +114,8 @@ export function GamingSection() {
                 <Badge variant="grape">
                   <Trophy size={12} /> Level {steamProfile.level}
                 </Badge>
-                <Badge variant="leaf">Now: {currentlyPlaying.title}</Badge>
+                <Badge variant="pineapple">{steamProfile.gamesOwned} games</Badge>
+                <Badge variant="leaf">{steamProfile.totalPlaytime} played</Badge>
               </div>
 
               <Button asChild variant="leaf" className="w-full">
@@ -121,7 +133,7 @@ export function GamingSection() {
             <div className="relative">
               <div className="absolute -top-3 left-4 z-10">
                 <span className="chip border-tangerine/40 bg-tangerine/15 text-tangerine">
-                  ▶ currently playing
+                  ★ most played
                 </span>
               </div>
               <GameCard game={currentlyPlaying} big />
@@ -130,7 +142,7 @@ export function GamingSection() {
 
           <Reveal delay={0.1}>
             <p className="mb-1 font-mono text-xs text-fg-faint">
-              {"// favorites on heavy rotation"}
+              {"// most played in the library"}
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               {favoriteGames.map((g) => (
