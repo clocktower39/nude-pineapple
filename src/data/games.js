@@ -1,5 +1,5 @@
 /*
-  Steam / gaming data — pulled from the public Steam + SteamHunters profile
+  Steam / gaming data - pulled from the public Steam + SteamHunters profile
   (steamid 76561198099664952). Hours are real playtime, rounded.
   `status` drives the SteamStatusBadge.
   status: "in-game" | "online" | "away" | "offline"
@@ -18,7 +18,7 @@ export const steamProfile = {
   tagline: "532 hours in Halo and the backlog still wins",
 };
 
-// The headline card — most hours on record.
+// The headline card - most hours on record.
 export const currentlyPlaying = {
   title: "Halo: The Master Chief Collection",
   blurb: "532 hours of 'just one more match.' Finish the fight, then start it again.",
@@ -74,7 +74,7 @@ export const favoriteGames = [
   },
 ];
 
-// Recently played — straight from the Steam profile's recent-activity feed.
+// Recently played - straight from the Steam profile's recent-activity feed.
 // `hours` is total on-record; `icon` is the Steam square game icon.
 export const recentGames = [
   {

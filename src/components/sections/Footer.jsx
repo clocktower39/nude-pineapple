@@ -36,7 +36,7 @@ function buildSocials() {
 
 export function Footer() {
   const socials = buildSocials();
-  const year = 2026; // bump as needed — kept static (no Date in this env)
+  const year = 2026; // bump as needed - kept static (no Date in this env)
 
   return (
     <footer
@@ -59,8 +59,8 @@ export function Footer() {
           </h2>
           <p className="mt-4 max-w-xl text-fg-muted">
             I'm always down to chat dev, gaming, homelabs, or cheer. Slide into
-            an inbox or add me on Steam — I promise I'm friendlier than my
-            Rainbow Six rank suggests.
+            an inbox or add me on Steam. Fair warning, I will absolutely talk
+            your ear off about Halo or my homelab.
           </p>
 
           <TooltipProvider delayDuration={150}>
@@ -95,7 +95,7 @@ export function Footer() {
         {/* bottom bar */}
         <div className="mt-8 flex flex-col items-center justify-between gap-3 text-center text-xs text-fg-faint sm:flex-row sm:text-left">
           <p className="font-mono">
-            © {year} {profile.domain} — handcrafted with React, caffeine & zero
+            © {year} {profile.domain} · handcrafted with React, caffeine & zero
             chill.
           </p>
           <p className="font-mono">

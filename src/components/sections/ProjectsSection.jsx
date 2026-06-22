@@ -94,7 +94,7 @@ export function ProjectsSection() {
       id="projects"
       kicker="git log --oneline"
       title="Things I've Built"
-      intro="Not a formal portfolio — just stuff I made because it was useful, fun, or I couldn't stop thinking about it."
+      intro="Not a formal portfolio, just stuff I made because it was useful, fun, or I couldn't stop thinking about it."
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (

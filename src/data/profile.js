@@ -10,12 +10,12 @@ export const profile = {
   role: "self-taught full-stack web developer",
   location: "somewhere between a terminal and a homelab",
 
-  // Rotating hero taglines — add as many as you like.
+  // Rotating hero taglines - add as many as you like.
   taglines: [
-    "a personal site, gaming cave & dev playground",
-    "Matt's weird little corner of the internet",
-    "half portfolio, half Steam profile, half pineapple",
-    "ships web apps, breeds coding agents, lifts heavy things",
+    "A personal site, gaming cave & dev playground",
+    "My weird little corner of the internet",
+    "Half portfolio, half Steam profile, half pineapple",
+    "Ships web apps, breeds coding agents, lifts heavy things",
   ],
 
   // Real links (swap freely).
@@ -23,7 +23,7 @@ export const profile = {
     github: "https://github.com/clocktower39",
     steam: "https://steamcommunity.com/id/NudePineapple/",
     email: "matt@mattkearns.dev",
-    // Reserved slots for later — left null so the footer hides them.
+    // Reserved slots for later - left null so the footer hides them.
     discord: null,
     youtube: null,
   },
@@ -32,7 +32,7 @@ export const profile = {
 // Short, punchy lines the hero terminal "types" out.
 export const terminalLines = [
   "$ whoami",
-  "matt — full-stack dev, agent wrangler, cheer coach",
+  "matt | full-stack dev, agent wrangler, cheer coach",
   "$ cat stack.txt",
   "react · node · docker · linux · a suspicious number of GPUs",
   "$ ./run-agents.sh",

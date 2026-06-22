@@ -78,7 +78,7 @@ export function GamingSection() {
       intro="Part Steam profile, part launcher dashboard. The backlog is enormous and I regret nothing."
     >
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-        {/* Steam profile card — styled like a launcher hero */}
+        {/* Steam profile card - styled like a launcher hero */}
         <Reveal>
           <div className="terminal-card relative h-full overflow-hidden border-cyan/25 p-0">
             {/* banner */}
@@ -87,7 +87,7 @@ export function GamingSection() {
             </div>
 
             <div className="px-5 pb-5">
-              {/* avatar + identity — relative z-10 keeps it above the banner */}
+              {/* avatar + identity - relative z-10 keeps it above the banner */}
               <div className="relative z-10 -mt-10 mb-3 flex items-end justify-between gap-3">
                 <div className="flex items-end gap-3">
                   {steamProfile.avatar ? (

@@ -33,7 +33,7 @@ export function PineappleLogo({ className, size = 220 }) {
       <button
         type="button"
         onClick={handleClick}
-        aria-label="Pineapple mascot — click me"
+        aria-label="Pineapple mascot, click me"
         title={clicks >= 5 ? "ok ok that tickles 🍍" : "psst… click me"}
         className="relative grid h-full w-full place-items-center rounded-full focus-visible:outline-none"
       >

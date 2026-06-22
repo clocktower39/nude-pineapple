@@ -1,5 +1,5 @@
 /*
-  Project cards — fun, not a formal portfolio.
+  Project cards - fun, not a formal portfolio.
   Each card has: what it is + why it's cool.
   `status`: "live" | "building" | "experiment" | "ongoing"
 */
@@ -21,7 +21,7 @@ export const projects = [
     accent: "hot",
     status: "live",
     what: "Web presence + tooling for a cheer/tumbling gym.",
-    why: "Coaching meets code — built for a world I actually stand in (and occasionally get thrown into).",
+    why: "Coaching meets code, built for a world I actually stand in (and occasionally get thrown into).",
     tags: ["web", "cheer", "small business"],
     link: null,
   },
@@ -61,7 +61,7 @@ export const projects = [
     accent: "cyan",
     status: "live",
     what: "The thing you're looking at. Vite + React, neon, and zero chill.",
-    why: "A homepage that feels like a person made it — terminal widgets, easter eggs, and a pineapple with no shame.",
+    why: "A homepage that feels like a person made it, packed with terminal widgets, easter eggs, and a pineapple with no shame.",
     tags: ["Vite", "React", "Tailwind"],
     link: null,
   },

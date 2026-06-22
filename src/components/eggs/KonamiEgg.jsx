@@ -65,7 +65,7 @@ export function KonamiEgg() {
       {toast && (
         <div className="absolute left-1/2 top-24 -translate-x-1/2">
           <div className="terminal-card px-4 py-2 text-sm text-leaf">
-            🍍 cheat code accepted — maximum pineapple unlocked
+            🍍 cheat code accepted. maximum pineapple unlocked
           </div>
         </div>
       )}

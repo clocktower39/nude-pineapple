@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-/* Minimal shadcn-style Card parts. Styling here is intentionally light —
+/* Minimal shadcn-style Card parts. Styling here is intentionally light -
    sections layer `glass-card` / `lift` on top for personality. */
 
 const Card = React.forwardRef(({ className, ...props }, ref) => (

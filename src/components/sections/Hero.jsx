@@ -86,7 +86,7 @@ export function Hero() {
             transition={{ duration: 0.55, delay: 0.12 }}
             className="mt-6 max-w-lg text-lg text-fg-muted sm:text-xl"
           >
-            Hey, I'm <span className="font-semibold text-fg">Matt</span> —{" "}
+            Hey, I'm <span className="font-semibold text-fg">Matt</span>.{" "}
             <RotatingTagline />
           </motion.p>
 
@@ -119,7 +119,7 @@ export function Hero() {
           </motion.div>
 
           <p className="mt-6 font-mono text-xs text-fg-faint">
-            psst — try the{" "}
+            psst, try the{" "}
             <span className="text-leaf">↑↑↓↓←→←→ b a</span> code. or click the
             pineapple.
           </p>

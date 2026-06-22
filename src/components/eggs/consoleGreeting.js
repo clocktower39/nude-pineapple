@@ -17,5 +17,5 @@ export function consoleGreeting() {
     "%cBuilt with Vite + React. Try the Konami code on the page. ↑↑↓↓←→←→ b a",
     muted
   );
-  console.log("%cmatt@mattkearns.dev — say hi 👋", muted);
+  console.log("%cmatt@mattkearns.dev · say hi 👋", muted);
 }

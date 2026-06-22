@@ -9,7 +9,7 @@ export const hobbies = [
     title: "Web Development",
     accent: "pineapple",
     blurb:
-      "Full-stack and self-taught. I build apps end-to-end — React on the front, Node and databases out back, deployed on stuff I probably over-engineered.",
+      "Full-stack and self-taught. I build apps end to end: React on the front, Node and databases out back, deployed on stuff I probably over-engineered.",
     tags: ["React", "Node", "APIs", "ship it"],
   },
   {
@@ -17,7 +17,7 @@ export const hobbies = [
     title: "AI Tools & Coding Agents",
     accent: "grape",
     blurb:
-      "Claude Code, Codex, OpenCode — I live in agent harnesses, git worktrees, and automation that writes its own boring parts so I don't have to.",
+      "Claude Code, Codex, OpenCode. I live in agent harnesses, git worktrees, and automation that writes its own boring parts so I don't have to.",
     tags: ["Claude Code", "Codex", "harnesses", "worktrees"],
   },
   {
@@ -49,7 +49,7 @@ export const hobbies = [
     title: "Greece & Greek",
     accent: "cyan",
     blurb:
-      "In love with Greece, the food, and the language. Slowly leveling up my Greek — σιγά σιγά (little by little).",
+      "In love with Greece, the food, and the language. Slowly leveling up my Greek, σιγά σιγά (little by little).",
     tags: ["Ελληνικά", "travel", "φιλοξενία"],
   },
   {

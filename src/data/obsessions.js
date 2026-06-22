@@ -1,5 +1,5 @@
 /*
-  "Currently obsessed with" — the easiest section to edit.
+  "Currently obsessed with" - the easiest section to edit.
   Just tweak this list whenever your hyperfixation changes.
 */
 

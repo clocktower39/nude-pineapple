@@ -43,7 +43,7 @@ export function useTypewriter(
         charIdx += 1;
         timers.current.push(setTimeout(tick, speed));
       } else {
-        // Line finished — commit it and move on after a pause.
+        // Line finished - commit it and move on after a pause.
         setLines((prev) => [...prev, line]);
         setCurrent("");
         lineIdx += 1;
