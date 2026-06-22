@@ -67,3 +67,38 @@ export const favoriteGames = [
     accent: "grape",
   },
 ];
+
+// Recently played — straight from the Steam profile's recent-activity feed.
+// `hours` is total on-record; `icon` is the Steam square game icon.
+export const recentGames = [
+  {
+    title: "Sons Of The Forest",
+    hours: "23h",
+    url: "https://steamcommunity.com/app/1326470",
+    icon: "https://shared.fastly.steamstatic.com/community_assets/images/apps/1326470/bd28fe592b339cff5a3eef743f31e3166c984c68.jpg",
+  },
+  {
+    title: "HITMAN World of Assassination",
+    hours: "13h",
+    url: "https://steamcommunity.com/app/1659040",
+    icon: "https://shared.fastly.steamstatic.com/community_assets/images/apps/1659040/552be1d38866afd1c33f682323d325130e7d0ce6.jpg",
+  },
+  {
+    title: "MECCHA CHAMELEON",
+    hours: "3h",
+    url: "https://steamcommunity.com/app/4704690",
+    icon: "https://shared.fastly.steamstatic.com/community_assets/images/apps/4704690/fbef288370f6ae51cb0a5066d7fb13d26147c94a.jpg",
+  },
+  {
+    title: "Halo: The Master Chief Collection",
+    hours: "532h",
+    url: "https://steamcommunity.com/app/976730",
+    icon: "https://shared.fastly.steamstatic.com/community_assets/images/apps/976730/196a45d8df1981ff6b6b1872a38dc38f6c22875d.jpg",
+  },
+  {
+    title: "Batman: Arkham City",
+    hours: "9h",
+    url: "https://steamcommunity.com/app/200260",
+    icon: "https://shared.fastly.steamstatic.com/community_assets/images/apps/200260/746ecf3ce44b2525eb7ad643e76a3b60913d2662.jpg",
+  },
+];

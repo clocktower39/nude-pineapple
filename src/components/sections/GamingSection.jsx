@@ -8,6 +8,7 @@ import {
   steamProfile,
   currentlyPlaying,
   favoriteGames,
+  recentGames,
 } from "@/data/games";
 
 // Accent → ring/text classes for game cards.
@@ -74,8 +75,8 @@ export function GamingSection() {
             </div>
 
             <div className="px-5 pb-5">
-              {/* avatar + identity (status sits on the right, clear of the avatar) */}
-              <div className="-mt-10 mb-3 flex items-end justify-between gap-3">
+              {/* avatar + identity — relative z-10 keeps it above the banner */}
+              <div className="relative z-10 -mt-10 mb-3 flex items-end justify-between gap-3">
                 <div className="flex items-end gap-3">
                   {steamProfile.avatar ? (
                     <img
@@ -124,6 +125,38 @@ export function GamingSection() {
                   <ExternalLink /> View full Steam profile
                 </a>
               </Button>
+
+              {/* recently played */}
+              <div className="mt-5">
+                <p className="mb-2 font-mono text-xs text-fg-faint">
+                  {"// recently played"}
+                </p>
+                <ul className="space-y-2">
+                  {recentGames.map((g) => (
+                    <li key={g.title}>
+                      <a
+                        href={g.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-2 transition-colors hover:border-cyan/40 hover:bg-white/[0.06]"
+                      >
+                        <img
+                          src={g.icon}
+                          alt=""
+                          loading="lazy"
+                          className="h-8 w-8 shrink-0 rounded-md object-cover"
+                        />
+                        <span className="min-w-0 flex-1 truncate text-sm text-fg">
+                          {g.title}
+                        </span>
+                        <span className="shrink-0 font-mono text-xs text-fg-faint">
+                          {g.hours}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </Reveal>
