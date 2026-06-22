@@ -44,10 +44,22 @@ function GameCard({ game, big = false }) {
             {game.blurb}
           </p>
         </div>
-        <Gamepad2
-          className={`shrink-0 ${accent.split(" ").slice(1).join(" ")} opacity-70 transition-transform group-hover:scale-110`}
-          size={big ? 26 : 20}
-        />
+        {game.icon ? (
+          <img
+            src={game.icon}
+            alt=""
+            loading="lazy"
+            className={`shrink-0 rounded-lg object-cover ring-1 ring-white/10 transition-transform group-hover:scale-110 ${
+              big ? "h-12 w-12" : "h-10 w-10"
+            }`}
+          />
+        ) : (
+          // Fallback for games not on Steam (e.g. Metroid Dread).
+          <Gamepad2
+            className={`shrink-0 ${accent.split(" ").slice(1).join(" ")} opacity-70 transition-transform group-hover:scale-110`}
+            size={big ? 26 : 20}
+          />
+        )}
       </div>
       <div className="relative mt-auto flex flex-wrap gap-2 pt-4">
         {game.hours && <span className="chip">⏱ {game.hours}</span>}

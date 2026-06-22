@@ -25,6 +25,7 @@ export const currentlyPlaying = {
   blurb: "532 hours of 'just one more match.' Finish the fight, then start it again.",
   hours: "500+ hrs",
   accent: "tangerine",
+  icon: "https://cdn.steamstatic.com/steamcommunity/public/images/apps/976730/196a45d8df1981ff6b6b1872a38dc38f6c22875d.jpg",
 };
 
 // Curated favorites. `hours` = real Steam playtime where it exists;
@@ -35,30 +36,35 @@ export const favoriteGames = [
     blurb: "432 hours in the wasteland and the main quest is still 'later.' Settlements need me.",
     hours: "400+ hrs",
     accent: "leaf",
+    icon: "https://cdn.steamstatic.com/steamcommunity/public/images/apps/377160/779c4356ebe32af2af7c9f0bbba595dfe872cd7f.jpg",
   },
   {
     title: "Starfield",
     blurb: "A thousand planets and I still spent 40 hours in the inventory menu.",
     hours: "250+ hrs",
     accent: "grape",
+    icon: "https://cdn.steamstatic.com/steamcommunity/public/images/apps/1716740/b4d5828937b2d29b875405dce97bbae0a5d01bbe.jpg",
   },
   {
     title: "Forza Horizon 5",
     blurb: "Mexico's prettiest roads, driven backwards into a cactus.",
     hours: "200+ hrs",
     accent: "pineapple",
+    icon: "https://cdn.steamstatic.com/steamcommunity/public/images/apps/1551360/6c1d20c62c4613263548323052c62cece488876b.jpg",
   },
   {
     title: "The Witcher 3: Wild Hunt",
     blurb: "Came for the main quest, stayed years for a card game.",
     hours: "175+ hrs",
     accent: "tangerine",
+    icon: "https://cdn.steamstatic.com/steamcommunity/public/images/apps/292030/7b52d11edee478d652ef4e7103e00644bed2c74c.jpg",
   },
   {
     title: "ANIMAL WELL",
     blurb: "A tiny luminous metroidvania that lives in my head rent-free. No HUD, all vibes.",
     hours: "20+ hrs",
     accent: "cyan",
+    icon: "https://cdn.steamstatic.com/steamcommunity/public/images/apps/813230/860b275ec0e63d6a74f6f3f9fc8dd75a49065f07.jpg",
   },
   {
     title: "Metroid Dread",
