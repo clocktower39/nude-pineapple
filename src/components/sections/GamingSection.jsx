@@ -23,7 +23,7 @@ function GameCard({ game, big = false }) {
   const accent = ACCENT[game.accent] ?? ACCENT.pineapple;
   return (
     <div
-      className={`lift glass-card group relative overflow-hidden p-5 ${
+      className={`lift glass-card group relative flex h-full flex-col overflow-hidden p-5 ${
         big ? "sm:p-6" : ""
       }`}
     >
@@ -48,7 +48,7 @@ function GameCard({ game, big = false }) {
           size={big ? 26 : 20}
         />
       </div>
-      <div className="relative mt-4 flex flex-wrap gap-2">
+      <div className="relative mt-auto flex flex-wrap gap-2 pt-4">
         {game.hours && <span className="chip">⏱ {game.hours}</span>}
         {game.platform && <span className="chip">🎮 {game.platform}</span>}
       </div>
@@ -149,6 +149,7 @@ export function GamingSection() {
               {favoriteGames.map((g) => (
                 <motion.div
                   key={g.title}
+                  className="h-full"
                   whileHover={{ y: -4 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
