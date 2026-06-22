@@ -16,4 +16,5 @@ export const facts = [
   "Longboards downhill at speeds his mother does not need to know about.",
   "Thinks 'it works on my machine' is technically a deployment strategy.",
   "Coaches tumbling, so he knows exactly how it feels when a deploy doesn't stick the landing.",
+  "Solves a 3x3 Rubik's cube in about 30 seconds, plus a whole shelf of weirder twisty puzzles.",
 ];

@@ -62,10 +62,10 @@ export const hobbies = [
   },
   {
     icon: "Activity",
-    title: "Lifting, Longboarding & Hockey",
+    title: "Lifting, Boarding & Biking",
     accent: "grape",
     blurb:
-      "Heavy barbells, long bombs down hills, hockey when I can, and tinkering with anything that has screws in it.",
-    tags: ["lifting", "longboard", "hockey", "tinkering"],
+      "Heavy barbells, long bombs down hills, mountain biking anything with a trail, hockey when I can, and tinkering with whatever has screws in it.",
+    tags: ["lifting", "longboard", "mtb", "hockey"],
   },
 ];
