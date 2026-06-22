@@ -27,13 +27,14 @@ export const currentlyPlaying = {
   accent: "tangerine",
 };
 
-// Top games by real playtime, straight from the profile.
+// Curated favorites. `hours` = real Steam playtime where it exists;
+// `platform` is for games that don't live on Steam (no hours to show).
 export const favoriteGames = [
   {
-    title: "Tom Clancy's Rainbow Six Siege",
-    blurb: "Drone, peek, die, repeat. Operation: just one more ranked.",
-    hours: "275+ hrs",
-    accent: "cyan",
+    title: "Fallout 4",
+    blurb: "432 hours in the wasteland and the main quest is still 'later.' Settlements need me.",
+    hours: "400+ hrs",
+    accent: "leaf",
   },
   {
     title: "Starfield",
@@ -48,21 +49,21 @@ export const favoriteGames = [
     accent: "pineapple",
   },
   {
-    title: "Fallout 76",
-    blurb: "Nuclear winter, rocky launch, somehow 187 hours deep anyway.",
-    hours: "175+ hrs",
-    accent: "leaf",
-  },
-  {
     title: "The Witcher 3: Wild Hunt",
     blurb: "Came for the main quest, stayed years for a card game.",
     hours: "175+ hrs",
     accent: "tangerine",
   },
   {
-    title: "Zero Hour",
-    blurb: "Tactical breaching with the boys. Mind the corners.",
-    hours: "150+ hrs",
+    title: "ANIMAL WELL",
+    blurb: "A tiny luminous metroidvania that lives in my head rent-free. No HUD, all vibes.",
+    hours: "20+ hrs",
+    accent: "cyan",
+  },
+  {
+    title: "Metroid Dread",
+    blurb: "EMMI nightmares and the best metroidvania movement ever made. Samus supremacy.",
+    platform: "Switch",
     accent: "grape",
   },
 ];

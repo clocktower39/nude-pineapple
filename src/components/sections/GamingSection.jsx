@@ -48,8 +48,9 @@ function GameCard({ game, big = false }) {
           size={big ? 26 : 20}
         />
       </div>
-      <div className="relative mt-4">
-        <span className="chip">⏱ {game.hours}</span>
+      <div className="relative mt-4 flex flex-wrap gap-2">
+        {game.hours && <span className="chip">⏱ {game.hours}</span>}
+        {game.platform && <span className="chip">🎮 {game.platform}</span>}
       </div>
     </div>
   );
@@ -142,7 +143,7 @@ export function GamingSection() {
 
           <Reveal delay={0.1}>
             <p className="mb-1 font-mono text-xs text-fg-faint">
-              {"// most played in the library"}
+              {"// favorite games"}
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               {favoriteGames.map((g) => (
