@@ -5,7 +5,7 @@
 
 export const facts = [
   "Matt once named a server 'pineapple' and now every device in the house is fruit-themed.",
-  "Can backspot a coed stunt and a flaky CI pipeline in the same afternoon.",
+  "Can base a coed stunt and catch a flaky CI pipeline in the same afternoon.",
   "Has more git worktrees open than browser tabs. Both numbers are concerning.",
   "Learning Greek mostly so he can order food with confidence. σουβλάκι, παρακαλώ.",
   "Believes cable management is a competitive sport.",

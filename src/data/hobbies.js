@@ -41,7 +41,7 @@ export const hobbies = [
     title: "Cheer Coaching & Stunting",
     accent: "hot",
     blurb:
-      "I coach cheer/tumbling and throw coed stunts. Yes, a developer who can actually catch a flyer. Spotting bugs AND backspots.",
+      "I coach cheer/tumbling and base coed stunts. Yes, a developer who can press a flyer overhead and still catch the bugs. I debug code and toss humans.",
     tags: ["coed stunting", "tumbling", "coaching"],
   },
   {
