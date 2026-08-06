@@ -237,6 +237,25 @@
     background: rgba(255, 255, 255, 0.04);
     color: var(--color-fg-muted);
   }
+
+  /* Slim, unobtrusive scrollbar for overflow panels (e.g. the game list) */
+  .scroll-slim {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+  }
+  .scroll-slim::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scroll-slim::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scroll-slim::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+  }
+  .scroll-slim::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.28);
+  }
 }
 
 /* ───────── accessibility: respect reduced motion ───────── */

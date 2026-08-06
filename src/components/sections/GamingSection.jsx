@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ExternalLink, Gamepad2, Trophy } from "lucide-react";
+import { ExternalLink, Gamepad2, Trophy, Users } from "lucide-react";
 import { Section, Reveal } from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -10,6 +10,19 @@ import {
   favoriteGames,
   recentGames,
 } from "@/data/games";
+import steamStats from "@/data/steam-stats.json";
+
+// Live library sorted by "last played" (scripts/fetch-steam-stats.mjs) —
+// falls back to the hand-typed list if the JSON is ever empty.
+const playedGames = steamStats.recentlyPlayed?.length
+  ? steamStats.recentlyPlayed
+  : recentGames;
+
+// Right-hand label: total hours on record (list stays sorted by last played).
+const rightLabel = (g) =>
+  typeof g.hoursOnRecord === "number"
+    ? `${Math.round(g.hoursOnRecord).toLocaleString()}h`
+    : g.hours;
 
 // Accent → ring/text classes for game cards.
 const ACCENT = {
@@ -138,35 +151,48 @@ export function GamingSection() {
                 </a>
               </Button>
 
-              {/* recently played */}
+              {/* recently played - scrollable library, most recent first */}
               <div className="mt-5">
-                <p className="mb-2 font-mono text-xs text-fg-faint">
-                  {"// recently played"}
+                <p className="mb-2 flex items-center justify-between font-mono text-xs text-fg-faint">
+                  <span>{"// recently played"}</span>
+                  <span>{playedGames.length} games</span>
                 </p>
-                <ul className="space-y-2">
-                  {recentGames.map((g) => (
-                    <li key={g.title}>
-                      <a
-                        href={g.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-2 transition-colors hover:border-cyan/40 hover:bg-white/[0.06]"
-                      >
-                        <img
-                          src={g.icon}
-                          alt=""
-                          loading="lazy"
-                          className="h-8 w-8 shrink-0 rounded-md object-cover"
-                        />
-                        <span className="min-w-0 flex-1 truncate text-sm text-fg">
-                          {g.title}
-                        </span>
-                        <span className="shrink-0 font-mono text-xs text-fg-faint">
-                          {g.hours}
-                        </span>
-                      </a>
-                    </li>
-                  ))}
+                <ul className="scroll-slim max-h-64 space-y-2 overflow-y-auto pr-1">
+                  {playedGames.map((g) => {
+                    const title = g.name ?? g.title;
+                    return (
+                      <li key={g.url ?? title}>
+                        <a
+                          href={g.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-2 transition-colors hover:border-cyan/40 hover:bg-white/[0.06]"
+                        >
+                          <img
+                            src={g.icon}
+                            alt=""
+                            loading="lazy"
+                            className="h-8 w-8 shrink-0 rounded-md object-cover"
+                          />
+                          <span className="flex min-w-0 flex-1 items-center gap-1.5">
+                            <span className="truncate text-sm text-fg">{title}</span>
+                            {g.shared && (
+                              <span
+                                className="inline-flex shrink-0 text-fg-faint"
+                                title="Family shared"
+                                aria-label="Family shared"
+                              >
+                                <Users size={12} />
+                              </span>
+                            )}
+                          </span>
+                          <span className="shrink-0 font-mono text-xs text-fg-faint">
+                            {rightLabel(g)}
+                          </span>
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>

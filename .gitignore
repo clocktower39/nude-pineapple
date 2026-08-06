@@ -10,6 +10,11 @@ dist
 dist-ssr
 *.local
 
+# Secrets — Steam Web API key etc.
+.env
+.env.*
+!.env.example
+
 # Local agent / editor config
 .claude/
 
