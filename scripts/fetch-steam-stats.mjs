@@ -48,6 +48,11 @@ const STEAMID64_BASE = 76561197960265728n;
 const KNOWN_STEAMID64 = "76561198099664952";
 
 const UA = "nude-pineapple-stats/1.1 (+personal site build script)";
+
+// Steam counts VR runtimes, launchers and media players as "played", but they
+// aren't games — keep them off the public recently-played list. Matched on
+// the store name; add to this when something new slips through.
+const HIDE_FROM_RECENT = /^(SteamVR|StartVR|VRCVideoCacher)$|VR Video Player|DeoVR/i;
 const friendCodeOf = (id) => (id ? String(BigInt(id) - STEAMID64_BASE) : null);
 const minsToHours = (m) => Math.round((m / 60) * 10) / 10;
 
@@ -194,6 +199,7 @@ async function viaWebApi() {
     .map((g) => ({ g, sortKey: nowSecs, shared: true }));
 
   const recentlyPlayed = [...sharedPlayed, ...ownedPlayed]
+    .filter(({ g }) => !HIDE_FROM_RECENT.test(g.name ?? ""))
     .sort((a, b) => b.sortKey - a.sortKey)
     .slice(0, 40)
     .map(({ g, shared }) => ({
