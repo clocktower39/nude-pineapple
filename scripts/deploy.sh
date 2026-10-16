@@ -3,6 +3,9 @@
 set -euo pipefail
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# Pull from GitHub and refresh the Steam numbers before anything is built.
+"$DIR/sync-before-build.sh"
+
 "$DIR/deploy-client.sh"
 "$DIR/deploy-server.sh"
 
