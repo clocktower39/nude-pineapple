@@ -93,13 +93,13 @@ export function GamingSection() {
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         {/* Steam profile card - styled like a launcher hero */}
         <Reveal>
-          <div className="terminal-card relative h-full overflow-hidden border-cyan/25 p-0">
+          <div className="terminal-card relative h-full overflow-hidden border-cyan/25 p-0 lg:flex lg:flex-col">
             {/* banner */}
             <div className="relative h-28 bg-gradient-to-br from-grape/40 via-ink-700 to-cyan/30">
               <div className="absolute inset-0 grid-bg opacity-40" />
             </div>
 
-            <div className="px-5 pb-5">
+            <div className="px-5 pb-5 lg:flex lg:min-h-0 lg:flex-1 lg:flex-col">
               {/* avatar + identity - relative z-10 keeps it above the banner */}
               <div className="relative z-10 -mt-10 mb-3 flex items-end justify-between gap-3">
                 <div className="flex items-end gap-3">
@@ -151,13 +151,15 @@ export function GamingSection() {
                 </a>
               </Button>
 
-              {/* recently played - scrollable library, most recent first */}
-              <div className="mt-5">
+              {/* recently played — on desktop the list grows to the card's bottom edge
+                  (the card stretches to the right column's height) and scrolls
+                  inside it; stacked on phones it keeps a fixed scroll height. */}
+              <div className="mt-5 lg:flex lg:min-h-0 lg:flex-1 lg:flex-col">
                 <p className="mb-2 flex items-center justify-between font-mono text-xs text-fg-faint">
                   <span>{"// recently played"}</span>
                   <span>{playedGames.length} games</span>
                 </p>
-                <ul className="scroll-slim max-h-64 space-y-2 overflow-y-auto pr-1">
+                <ul className="scroll-slim max-h-80 space-y-2 overflow-y-auto pr-1 lg:max-h-none lg:min-h-48 lg:flex-1 lg:basis-0">
                   {playedGames.map((g) => {
                     const title = g.name ?? g.title;
                     return (
