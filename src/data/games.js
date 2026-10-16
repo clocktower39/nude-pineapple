@@ -5,24 +5,41 @@
   status: "in-game" | "online" | "away" | "offline"
 */
 
+import steamStats from "./steam-stats.json";
+
+// Live numbers from src/data/steam-stats.json (refreshed by
+// scripts/fetch-steam-stats.mjs on every deploy), each falling back to the
+// hand-typed value. The Steam Web API counts owned games plus free games
+// you've played; family-shared games aren't visible to it, so they aren't
+// in gamesOwned.
+const stat = (label) => steamStats.cornerStats?.find((c) => c.label === label);
+const hoursIn = (s) => (s ? Number(String(s).replace(/[^\d.]/g, "")) : null);
+const MOST_PLAYED_TITLE = "Halo: The Master Chief Collection";
+const mostPlayedStat = stat("Most played");
+// Only trust the live hours while Halo is still the most played — the card's
+// art and copy are about Halo.
+const haloHours =
+  mostPlayedStat?.value === MOST_PLAYED_TITLE ? Math.round(hoursIn(mostPlayedStat.detail)) : 532;
+
 export const steamProfile = {
   username: "Nude Pineapple",
   friendCode: "139399224",
   url: "https://steamcommunity.com/id/NudePineapple/",
   status: "online",
   currentGame: null, // not in-game at build time
-  level: 15,
-  gamesOwned: 255,
-  totalPlaytime: "6¼ months",
+  level: steamStats.profile?.level ?? 15,
+  gamesOwned: steamStats.profile?.gamesOwned ?? 255,
+  // "6.4 months in-game" → "6.4 months"
+  totalPlaytime: stat("Lifetime playtime")?.detail?.replace(/ in-game$/, "") ?? "6¼ months",
   avatar: "/avatar.jpg", // local copy in public/
-  tagline: "532 hours in Halo and the backlog still wins",
+  tagline: `${haloHours} hours in Halo and the backlog still wins`,
 };
 
 // The headline card - most hours on record.
 export const currentlyPlaying = {
-  title: "Halo: The Master Chief Collection",
-  blurb: "532 hours of 'just one more match.' Finish the fight, then start it again.",
-  hours: "500+ hrs",
+  title: MOST_PLAYED_TITLE,
+  blurb: `${haloHours} hours of 'just one more match.' Finish the fight, then start it again.`,
+  hours: `${haloHours} hrs`,
   accent: "tangerine",
   icon: "/games/halo-mcc.jpg",
 };
