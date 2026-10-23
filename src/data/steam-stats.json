@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:09:48.904Z",
+  "generatedAt": "2026-10-23T22:34:37.855Z",
   "source": "Steam Web API (api.steampowered.com)",
   "profile": {
     "steamID64": "76561198099664952",
@@ -9,7 +9,7 @@
     "profileUrl": "https://steamcommunity.com/id/NudePineapple/",
     "friendCode": "139399224",
     "avatar": "https://avatars.steamstatic.com/babeccfd31815d014712e990fb5f8852c7fe1fcd_full.jpg",
-    "onlineState": "snooze",
+    "onlineState": "online",
     "currentGame": null,
     "memberSince": "2013-07-24",
     "yearsOnSteam": 13,
@@ -30,14 +30,14 @@
     },
     {
       "label": "Lifetime playtime",
-      "value": "4,682h",
+      "value": "4,699h",
       "detail": "6.4 months in-game",
       "icon": "⏳"
     },
     {
       "label": "Most played",
       "value": "Halo: The Master Chief Collection",
-      "detail": "534h",
+      "detail": "535h",
       "icon": "🏆"
     },
     {
@@ -48,8 +48,8 @@
     },
     {
       "label": "Last 2 weeks",
-      "value": "55.5h",
-      "detail": "across 11 games",
+      "value": "261.4h",
+      "detail": "across 15 games",
       "icon": "⏱"
     },
     {
@@ -61,21 +61,93 @@
   ],
   "recentlyPlayed": [
     {
+      "name": "HITMAN World of Assassination",
+      "url": "https://steamcommunity.com/app/1659040",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1659040/552be1d38866afd1c33f682323d325130e7d0ce6.jpg",
+      "hoursOnRecord": 14.2,
+      "lastPlayed": null,
+      "lastPlayedLabel": "recent",
+      "shared": true
+    },
+    {
       "name": "Red Dead Redemption 2",
       "url": "https://steamcommunity.com/app/1174180",
       "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1174180/5106abd9c1187a97f23295a0ba9470c94804ec6c.jpg",
-      "hoursOnRecord": 74.7,
-      "lastPlayed": "2026-10-15",
-      "lastPlayedLabel": "Oct 15",
+      "hoursOnRecord": 84.7,
+      "lastPlayed": "2026-10-23",
+      "lastPlayedLabel": "Oct 23",
+      "shared": false
+    },
+    {
+      "name": "Halo: The Master Chief Collection",
+      "url": "https://steamcommunity.com/app/976730",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/976730/196a45d8df1981ff6b6b1872a38dc38f6c22875d.jpg",
+      "hoursOnRecord": 534.7,
+      "lastPlayed": "2026-10-22",
+      "lastPlayedLabel": "Oct 22",
+      "shared": false
+    },
+    {
+      "name": "GROUND BRANCH",
+      "url": "https://steamcommunity.com/app/16900",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/16900/61d821abae6880b59dd17ac99901279ed1d4968b.jpg",
+      "hoursOnRecord": 119.5,
+      "lastPlayed": "2026-10-22",
+      "lastPlayedLabel": "Oct 22",
+      "shared": false
+    },
+    {
+      "name": "HELLDIVERS™ 2",
+      "url": "https://steamcommunity.com/app/553850",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/5236dcc5d02b1f7aa199eef56253d20be87baef3.jpg",
+      "hoursOnRecord": 36,
+      "lastPlayed": "2026-10-22",
+      "lastPlayedLabel": "Oct 22",
       "shared": false
     },
     {
       "name": "Saints Row The Third Remastered",
       "url": "https://steamcommunity.com/app/978300",
       "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/978300/115fd158b792354987fb64f7cbcceadfa2f43b8b.jpg",
-      "hoursOnRecord": 10,
-      "lastPlayed": "2026-10-15",
-      "lastPlayedLabel": "Oct 15",
+      "hoursOnRecord": 12.2,
+      "lastPlayed": "2026-10-20",
+      "lastPlayedLabel": "Oct 20",
+      "shared": false
+    },
+    {
+      "name": "The Binding of Isaac: Rebirth",
+      "url": "https://steamcommunity.com/app/250900",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/16d46c8630499bfc54d20745ac90786a302cd643.jpg",
+      "hoursOnRecord": 127.6,
+      "lastPlayed": "2026-10-17",
+      "lastPlayedLabel": "Oct 17",
+      "shared": false
+    },
+    {
+      "name": "Pavlov Shack",
+      "url": "https://steamcommunity.com/app/3504270",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3504270/07fb1a6519fd5d4e1b7ecf4f4d5d8d739bb0f551.jpg",
+      "hoursOnRecord": 0.9,
+      "lastPlayed": "2026-10-17",
+      "lastPlayedLabel": "Oct 17",
+      "shared": false
+    },
+    {
+      "name": "ANIMAL WELL",
+      "url": "https://steamcommunity.com/app/813230",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/813230/860b275ec0e63d6a74f6f3f9fc8dd75a49065f07.jpg",
+      "hoursOnRecord": 21.6,
+      "lastPlayed": "2026-10-17",
+      "lastPlayedLabel": "Oct 17",
+      "shared": false
+    },
+    {
+      "name": "Half-Life: Alyx",
+      "url": "https://steamcommunity.com/app/546560",
+      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/546560/225032ac2ad1aca8f5fd98baa2b9daf1eebea5ca.jpg",
+      "hoursOnRecord": 12.3,
+      "lastPlayed": "2026-10-17",
+      "lastPlayedLabel": "Oct 17",
       "shared": false
     },
     {
@@ -88,39 +160,12 @@
       "shared": false
     },
     {
-      "name": "Halo: The Master Chief Collection",
-      "url": "https://steamcommunity.com/app/976730",
-      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/976730/196a45d8df1981ff6b6b1872a38dc38f6c22875d.jpg",
-      "hoursOnRecord": 534,
-      "lastPlayed": "2026-10-15",
-      "lastPlayedLabel": "Oct 15",
-      "shared": false
-    },
-    {
       "name": "SUPERHOT VR",
       "url": "https://steamcommunity.com/app/617830",
       "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/617830/5bb403a4548a6e95e0d8115d2df8bee782ef6b71.jpg",
       "hoursOnRecord": 12.5,
       "lastPlayed": "2026-10-13",
       "lastPlayedLabel": "Oct 13",
-      "shared": false
-    },
-    {
-      "name": "Half-Life: Alyx",
-      "url": "https://steamcommunity.com/app/546560",
-      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/546560/225032ac2ad1aca8f5fd98baa2b9daf1eebea5ca.jpg",
-      "hoursOnRecord": 10.6,
-      "lastPlayed": "2026-10-11",
-      "lastPlayedLabel": "Oct 11",
-      "shared": false
-    },
-    {
-      "name": "Pavlov Shack",
-      "url": "https://steamcommunity.com/app/3504270",
-      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3504270/07fb1a6519fd5d4e1b7ecf4f4d5d8d739bb0f551.jpg",
-      "hoursOnRecord": 0.8,
-      "lastPlayed": "2026-10-02",
-      "lastPlayedLabel": "Oct 2",
       "shared": false
     },
     {
@@ -151,15 +196,6 @@
       "shared": false
     },
     {
-      "name": "ANIMAL WELL",
-      "url": "https://steamcommunity.com/app/813230",
-      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/813230/860b275ec0e63d6a74f6f3f9fc8dd75a49065f07.jpg",
-      "hoursOnRecord": 21.5,
-      "lastPlayed": "2026-09-28",
-      "lastPlayedLabel": "Sep 28",
-      "shared": false
-    },
-    {
       "name": "BONEWORKS",
       "url": "https://steamcommunity.com/app/823500",
       "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/823500/9b62f85582df2290373d034b585d683c0e66993e.jpg",
@@ -175,15 +211,6 @@
       "hoursOnRecord": 4.5,
       "lastPlayed": "2026-09-27",
       "lastPlayedLabel": "Sep 27",
-      "shared": false
-    },
-    {
-      "name": "HELLDIVERS™ 2",
-      "url": "https://steamcommunity.com/app/553850",
-      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/5236dcc5d02b1f7aa199eef56253d20be87baef3.jpg",
-      "hoursOnRecord": 36,
-      "lastPlayed": "2026-09-24",
-      "lastPlayedLabel": "Sep 24",
       "shared": false
     },
     {
@@ -286,15 +313,6 @@
       "shared": false
     },
     {
-      "name": "GROUND BRANCH",
-      "url": "https://steamcommunity.com/app/16900",
-      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/16900/61d821abae6880b59dd17ac99901279ed1d4968b.jpg",
-      "hoursOnRecord": 118.8,
-      "lastPlayed": "2026-07-17",
-      "lastPlayedLabel": "Jul 17",
-      "shared": false
-    },
-    {
       "name": "Deep Rock Galactic",
       "url": "https://steamcommunity.com/app/548430",
       "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/548430/e033e23c29a192a17c16a7645a2b423ac64ff447.jpg",
@@ -310,15 +328,6 @@
       "hoursOnRecord": 44.1,
       "lastPlayed": "2026-06-01",
       "lastPlayedLabel": "Jun 1",
-      "shared": false
-    },
-    {
-      "name": "The Binding of Isaac: Rebirth",
-      "url": "https://steamcommunity.com/app/250900",
-      "icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/16d46c8630499bfc54d20745ac90786a302cd643.jpg",
-      "hoursOnRecord": 126.6,
-      "lastPlayed": "2026-04-28",
-      "lastPlayedLabel": "Apr 28",
       "shared": false
     },
     {
