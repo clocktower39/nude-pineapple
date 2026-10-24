@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T22:34:37.855Z",
+  "generatedAt": "2026-10-24T01:59:13.017Z",
   "source": "Steam Web API (api.steampowered.com)",
   "profile": {
     "steamID64": "76561198099664952",
@@ -9,7 +9,7 @@
     "profileUrl": "https://steamcommunity.com/id/NudePineapple/",
     "friendCode": "139399224",
     "avatar": "https://avatars.steamstatic.com/babeccfd31815d014712e990fb5f8852c7fe1fcd_full.jpg",
-    "onlineState": "online",
+    "onlineState": "away",
     "currentGame": null,
     "memberSince": "2013-07-24",
     "yearsOnSteam": 13,
@@ -48,7 +48,7 @@
     },
     {
       "label": "Last 2 weeks",
-      "value": "261.4h",
+      "value": "264.9h",
       "detail": "across 15 games",
       "icon": "⏱"
     },
